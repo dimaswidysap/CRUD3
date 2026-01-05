@@ -1,0 +1,157 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #f3f4f6; /* Abu-abu sangat muda (bukan cyan) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #1f2937;
+}
+
+/* Container Utama (Kartu) */
+.container {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05); /* Shadow halus premium */
+  overflow: hidden; /* Agar konten tidak keluar radius */
+  border: 1px solid #e5e7eb;
+}
+
+/* Header Form */
+.header-form {
+  background-color: #ffffff;
+  padding: 30px 40px 10px 40px;
+  border-bottom: 1px solid transparent;
+}
+
+.header-form h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 5px;
+}
+
+.header-form p {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+/* Body Form */
+.form-body {
+  padding: 30px 40px 40px 40px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-row .form-group {
+  flex: 1; /* Membagi lebar kolom sama rata */
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #111827;
+  transition: all 0.2s ease;
+  background-color: #fff;
+}
+
+/* State Focus */
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #4f46e5; /* Indigo */
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+/* Khusus Readonly (Kode Barang) */
+.input-readonly {
+  background-color: #f9fafb; /* Abu-abu dikit */
+  color: #6b7280;
+  cursor: not-allowed;
+  border-color: #e5e7eb;
+}
+
+small {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.75rem;
+  color: #9ca3af;
+  font-style: italic;
+}
+
+/* Tombol Aksi */
+.action-buttons {
+  display: flex;
+  justify-content: flex-end; /* Tombol di kanan */
+  gap: 12px;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #f3f4f6;
+}
+
+.btn-cancel {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #374151;
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  transition: all 0.2s;
+}
+
+.btn-cancel:hover {
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+.btn-save {
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #4f46e5; /* Warna Indigo Premium */
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 4px 6px -1px rgba(79, 70, 229, 0.1),
+    0 2px 4px -1px rgba(79, 70, 229, 0.06);
+}
+
+.btn-save:hover {
+  background-color: #4338ca;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 8px -1px rgba(79, 70, 229, 0.15);
+}

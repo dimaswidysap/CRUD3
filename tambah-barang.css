@@ -1,0 +1,134 @@
+/* css/tambah/tambah.css */
+
+/* Import Font */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  /* Background Gradient Gelap */
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card {
+  /* Efek Kaca (Glassmorphism) */
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px); /* Efek Blur di belakang kaca */
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px;
+  color: white; /* Teks jadi putih */
+}
+
+h2 {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 12px 15px;
+  background: rgba(255, 255, 255, 0.05); /* Input semi transparan */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* Ganti warna placeholder agar terbaca di background gelap */
+input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* Opsi di dalam select tetap putih backgroundnya (keterbatasan browser) */
+select option {
+  background: #2a5298;
+  color: white;
+}
+
+input:focus,
+select:focus {
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+}
+
+.half {
+  flex: 1;
+}
+
+.btn-container {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.btn {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 50px; /* Tombol bulat penuh (Pill) */
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.btn-save {
+  background: #ffffff;
+  color: #1e3c72; /* Teks biru */
+}
+.btn-save:hover {
+  background: #f0f0f0;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn-cancel {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+.btn-cancel:hover {
+  background: rgba(255, 40, 40, 0.2);
+  border-color: #ff4d4d;
+  color: #ff4d4d;
+}
