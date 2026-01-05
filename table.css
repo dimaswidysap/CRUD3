@@ -1,23 +1,21 @@
-/* Container Utama */
 .container-table {
   width: 100%;
-  background-color: #ffffff; /* Ubah jadi putih bersih */
-  padding: 0; /* Padding dihilangkan agar tabel memenuhi card */
+  background-color: #ffffff;
+  padding: 0;
   border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); /* Shadow halus */
-  overflow: hidden; /* Agar sudut tabel ikut melengkung */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
   border: 1px solid #eee;
 }
 
 .container-table table {
   width: 100%;
-  border-collapse: collapse; /* Menggabungkan garis border */
+  border-collapse: collapse;
   font-family: "Poppins", sans-serif;
 }
 
-/* Header Tabel (adiedja) */
 .adiedja {
-  background-color: #2b3a42; /* Warna Gelap Elegan */
+  background-color: #2b3a42;
   color: #ffffff;
   text-transform: uppercase;
   font-size: 0.85rem;
@@ -30,7 +28,6 @@
   border: none;
 }
 
-/* Baris Data (table-transaksi) */
 .table-transaksi {
   border-bottom: 1px solid #f0f0f0;
   transition: all 0.2s ease;
@@ -42,12 +39,10 @@
   font-size: 0.95rem;
 }
 
-/* Efek Hover (Saat mouse di atas baris) */
 .table-transaksi:hover {
-  background-color: #f9fbfd; /* Biru sangat muda saat di-hover */
+  background-color: #f9fbfd;
 }
 
-/* Kolom Aksi (adnieg) */
 .adnieg {
   display: flex;
   gap: 0.5rem;
@@ -66,10 +61,9 @@
   transition: 0.3s;
 }
 
-/* Tombol Edit */
 .adnieg a:nth-child(1) {
-  background-color: #e3f2fd; /* Biru muda */
-  color: #1976d2; /* Text Biru tua */
+  background-color: #e3f2fd;
+  color: #1976d2;
 }
 .adnieg a:nth-child(1):hover {
   background-color: #1976d2;
@@ -78,19 +72,17 @@
 
 /* Tombol Hapus */
 .adnieg a:nth-child(2) {
-  background-color: #ffebee; /* Merah muda */
-  color: #d32f2f; /* Text Merah tua */
+  background-color: #ffebee;
+  color: #d32f2f;
 }
 .adnieg a:nth-child(2):hover {
   background-color: #d32f2f;
   color: white;
 }
 
-/* Icon adjustment (supaya icon mengikuti warna text) */
 .link-aksi span:nth-child(1) {
   width: 16px;
   height: 16px;
   display: inline-block;
   background-size: cover;
-  /* Filter ini opsional: untuk mengubah warna icon SVG jadi hitam/warna text */
 }

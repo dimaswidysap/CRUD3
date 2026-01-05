@@ -29,7 +29,7 @@
                 </tr>
 
                 <?php
-                // Koneksi Database (Sesuaikan nama DB di file koneksi.php menjadi 'db_toko')
+                
                 include 'koneksi.php';
 
                 $query = "SELECT * FROM barang ORDER BY kode_barang ASC";

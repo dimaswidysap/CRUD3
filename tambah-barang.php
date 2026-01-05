@@ -1,8 +1,8 @@
 <?php
-// Panggil koneksi database
+
 include 'koneksi.php';
 
-// Cek apakah tombol simpan sudah diklik
+
 if (isset($_POST['simpan'])) {
     // Ambil data dari form
     $kode_barang = $_POST['kode_barang'];
@@ -11,16 +11,16 @@ if (isset($_POST['simpan'])) {
     $harga       = $_POST['harga'];
     $stok        = $_POST['stok'];
 
-    // Cek apakah kode barang sudah ada (mencegah duplikat)
+
     $cek_kode = mysqli_query($koneksi, "SELECT kode_barang FROM barang WHERE kode_barang = '$kode_barang'");
     
     if (mysqli_num_rows($cek_kode) > 0) {
-        // Jika kode sudah ada, tampilkan peringatan
+      
         echo "<script>
                 alert('Gagal! Kode Barang $kode_barang sudah terdaftar.');
               </script>";
     } else {
-        // Jika kode belum ada, lakukan proses INSERT
+       
         $query = "INSERT INTO barang (kode_barang, nama_barang, kategori, harga, stok) 
                   VALUES ('$kode_barang', '$nama_barang', '$kategori', '$harga', '$stok')";
         

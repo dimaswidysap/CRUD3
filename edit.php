@@ -1,29 +1,29 @@
 <?php
-// Hubungkan ke database
-include 'koneksi.php'; // Pastikan path ke koneksi.php benar
+
+include 'koneksi.php';
 
 // 1. AMBIL DATA LAMA (GET)
 if (isset($_GET['kode'])) {
     $kode_barang = $_GET['kode'];
     
-    // Ambil data barang berdasarkan kode_barang
+
     $query_ambil = "SELECT * FROM barang WHERE kode_barang = '$kode_barang'";
     $result_ambil = mysqli_query($koneksi, $query_ambil);
     $data = mysqli_fetch_assoc($result_ambil);
 
-    // Jika data tidak ditemukan
+
     if (mysqli_num_rows($result_ambil) < 1) {
         echo "<script>alert('Data tidak ditemukan!'); window.location='index.php';</script>";
     }
 } else {
-    // Jika tidak ada parameter kode di URL
+
     echo "<script>window.location='index.php';</script>";
 }
 
 // 2. PROSES UPDATE (POST)
 if (isset($_POST['update'])) {
     // Ambil data dari form
-    $kode_barang    = $_POST['kode_barang']; // PK (Readonly)
+    $kode_barang    = $_POST['kode_barang']; 
     $nama_barang    = $_POST['nama_barang'];
     $kategori       = $_POST['kategori'];
     $harga          = $_POST['harga'];

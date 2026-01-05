@@ -1,7 +1,3 @@
-/* css/tambah/tambah.css */
-
-/* Import Font */
-
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +6,6 @@
 }
 
 body {
-  /* Background Gradient Gelap */
   background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
   min-height: 100vh;
   display: flex;
@@ -20,9 +15,8 @@ body {
 }
 
 .card {
-  /* Efek Kaca (Glassmorphism) */
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px); /* Efek Blur di belakang kaca */
+  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 40px;
@@ -30,7 +24,7 @@ body {
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
   width: 100%;
   max-width: 500px;
-  color: white; /* Teks jadi putih */
+  color: white;
 }
 
 h2 {
@@ -57,7 +51,7 @@ input[type="number"],
 select {
   width: 100%;
   padding: 12px 15px;
-  background: rgba(255, 255, 255, 0.05); /* Input semi transparan */
+  background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 8px;
   color: white;
@@ -66,12 +60,10 @@ select {
   transition: 0.3s;
 }
 
-/* Ganti warna placeholder agar terbaca di background gelap */
 input::placeholder {
   color: rgba(255, 255, 255, 0.4);
 }
 
-/* Opsi di dalam select tetap putih backgroundnya (keterbatasan browser) */
 select option {
   background: #2a5298;
   color: white;
@@ -103,7 +95,7 @@ select:focus {
   flex: 1;
   padding: 12px;
   border: none;
-  border-radius: 50px; /* Tombol bulat penuh (Pill) */
+  border-radius: 50px;
   font-weight: 500;
   cursor: pointer;
   text-align: center;
@@ -114,7 +106,7 @@ select:focus {
 
 .btn-save {
   background: #ffffff;
-  color: #1e3c72; /* Teks biru */
+  color: #1e3c72;
 }
 .btn-save:hover {
   background: #f0f0f0;

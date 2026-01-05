@@ -1,4 +1,3 @@
-/* Reset & Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +6,7 @@
 }
 
 body {
-  background-color: #f3f4f6; /* Abu-abu sangat muda (bukan cyan) */
+  background-color: #f3f4f6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,18 +14,16 @@ body {
   color: #1f2937;
 }
 
-/* Container Utama (Kartu) */
 .container {
   background-color: #ffffff;
   width: 100%;
   max-width: 500px;
   border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05); /* Shadow halus premium */
-  overflow: hidden; /* Agar konten tidak keluar radius */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
   border: 1px solid #e5e7eb;
 }
 
-/* Header Form */
 .header-form {
   background-color: #ffffff;
   padding: 30px 40px 10px 40px;
@@ -45,7 +42,6 @@ body {
   font-size: 0.9rem;
 }
 
-/* Body Form */
 .form-body {
   padding: 30px 40px 40px 40px;
 }
@@ -57,10 +53,6 @@ body {
 .form-row {
   display: flex;
   gap: 20px;
-}
-
-.form-row .form-group {
-  flex: 1; /* Membagi lebar kolom sama rata */
 }
 
 label {
@@ -85,17 +77,15 @@ select {
   background-color: #fff;
 }
 
-/* State Focus */
 input:focus,
 select:focus {
   outline: none;
-  border-color: #4f46e5; /* Indigo */
+  border-color: #4f46e5;
   box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
 }
 
-/* Khusus Readonly (Kode Barang) */
 .input-readonly {
-  background-color: #f9fafb; /* Abu-abu dikit */
+  background-color: #f9fafb;
   color: #6b7280;
   cursor: not-allowed;
   border-color: #e5e7eb;
@@ -112,7 +102,7 @@ small {
 /* Tombol Aksi */
 .action-buttons {
   display: flex;
-  justify-content: flex-end; /* Tombol di kanan */
+  justify-content: flex-end;
   gap: 12px;
   margin-top: 30px;
   padding-top: 20px;
@@ -142,7 +132,7 @@ small {
   font-size: 0.9rem;
   font-weight: 500;
   color: #ffffff;
-  background-color: #4f46e5; /* Warna Indigo Premium */
+  background-color: #4f46e5;
   border: 1px solid transparent;
   cursor: pointer;
   transition: all 0.2s;
